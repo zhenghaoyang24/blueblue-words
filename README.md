@@ -15,10 +15,10 @@
 
 `url: "http://api.fanyi.baidu.com/api/trans/vip/translate?q="+this.data.inputText+"&from=auto&to="+this.data.to+"&appid=202303XXXXX&salt=14356602XX&sign="+this.data.sign,`
 
-#### 2. 第104行：此行代码是用于计算sign，用来填充上方url中的sign，具体拼写规则参照百度翻译API，很简单。
+#### 2. 第102行：此行代码是用于计算sign，用来填充上方url中的sign，具体拼写规则参照百度翻译API，很简单。
 `var befor_sign = '20230329XXXXXXXXX'+this.data.inputText+'14356602XXXXXXXXXXXXXXX'`
 ### 二、替换代码位置：pages/dayword/dayword.js  
-#### 1. 第86行：key更换为自己注册的聚合数据账号的Key。([每日英语-每日英语API接口-免费API接口-聚合数据 (juhe.cn)](https://www.juhe.cn/docs/api/id/760))
+#### 1. 第40\66\91行：key更换为自己注册的聚合数据账号的Key。([每日英语-每日英语API接口-免费API接口-聚合数据 (juhe.cn)](https://www.juhe.cn/docs/api/id/760))
 `url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315dXXXXXXXXXXXXXXXX','`
    
 
