@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="beging_view">
+
+  <image class="cion_image" src="../../images/icon/brand_black.png" style="position: relative; left: 0rpx; top: 464rpx"></image>
+
+</view>
+
+

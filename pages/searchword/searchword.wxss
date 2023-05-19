@@ -1,0 +1,80 @@
+/* pages/SearchWord/searchword.wxss */
+page {
+  background-color: rgb(235, 235, 235);
+}
+
+.title_view {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  width: 100%;
+  background-color: #97bdde;
+}
+
+.title_text {
+  margin-bottom: 4px;
+  color: rgb(22, 22, 22);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+/* 全局contain */
+.search_contain {
+  width: 100%;
+}
+
+/* 读音按钮 */
+.audio_view{
+  padding-left: 20rpx;
+  display: flex;
+  /* justify-content: start; */
+}
+
+.audio_view button{
+  background-color: #97bdde;
+  width: 120rpx;
+  margin: 0;
+}.audio_view button:active{
+  background-color: #5ca2df;
+}
+
+
+/* 搜索框 蓝色背景 */
+.search_input_view {
+  align-items: center;
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #97bdde;
+}
+
+/* 输入框 */
+.search_word_input {
+  width: 100%;
+  border: 2px solid rgba(73, 73, 73, 0.6);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* 按钮 */
+.search_word_button {
+  background-color: #97bdde;
+  display: flex;
+  justify-content: center;
+}
+
+.cion_image {
+  width: 2.5rem;
+  height: 2.3rem;
+}
+
+
+
+/* 发音audio */
+.speak_voice_audio {
+  width: 200px;
+  height: 20px;
+  background-color: tomato;
+}

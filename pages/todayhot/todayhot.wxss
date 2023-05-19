@@ -1,0 +1,89 @@
+/* pages/todayhot/todayhot.wxss */
+page {
+  background-color: rgb(235, 235, 235);
+}
+
+.weibo_view {
+  text-align: center;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  display: flex;
+  font-size: 1em;
+}
+
+
+
+.bilibili_view {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.number_bilibili {
+  color: black;
+  font-size: 1em;
+  padding: 4px;
+  background-color: rgb(241, 165, 111);
+  position: absolute;
+}
+.zhihu_view{
+  display: flex;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+.number_zhihu{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-size: 1em;
+
+  /* background-color: rgb(241, 165, 111); */
+}
+
+.bilibili_view image {
+  width: 40%;
+}
+
+.video_info_view {
+  padding-left: 10rpx;
+  position: relative;
+  /* border: 1px red solid; */
+  top: 0;
+  bottom: 0;
+  width: 60%;
+}
+.title_text{
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+.author_image_view {
+  color: rgb(54, 54, 54);
+  font-size: 0.8em;
+  /* border: 1px red solid; */
+  position: absolute;
+  bottom: 0;
+}
+
+.author_bofang_view {
+  display: flex;
+  justify-self: center;
+  text-align: center;
+}
+.author_bofang_view>text{
+  padding-left: 10rpx;
+}
+
+.author_image_view image {
+  width: 30rpx;
+}

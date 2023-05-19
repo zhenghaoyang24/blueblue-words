@@ -1,0 +1,46 @@
+<!--pages/translationpage/translationpage.wxml-->
+<view class="title_view" style="height: {{navBarHeight}}px;">
+  <text class="title_text">翻译</text>
+</view>
+
+<view style="padding-top:  {{navBarHeight}}px;margin: 0;"> 
+</view>
+
+<picker value="{{index}}" range="{{toLanguageArray}}" bindchange="bindPickerChange" class="my_picker">
+<view class="toLanguageView">
+ <view style="padding-right: 15rpx;">
+  自动检测
+ </view> <image src="../../images/icon/zhuanhuan01.png" mode="widthFix"/>
+ <view style="padding-left: 15rpx;">
+  {{toLanguageArray[index]}}
+ </view>
+
+</view>
+</picker>
+
+<!-- <text style="padding-left: 20rpx;">翻译为:</text>
+<view style="display: flex;padding: 20rpx;">
+  <van-radio-group value="{{radio}}" bind:change="onChange" direction="horizontal">
+    <van-radio name="1">英文</van-radio>
+    <van-radio name="2">中文</van-radio>
+    <van-radio name="3">日文</van-radio>
+    <van-radio name="4">韩语</van-radio>
+    <van-radio name="5">法语</van-radio>
+  </van-radio-group>
+</view> -->
+
+
+<view class="translate_container">
+
+  <textarea data-name="inputText" bindinput="translateInputAction" style="border: 1rpx solid rgba(24, 24, 24,0.8);padding: 15rpx; width: 90%;margin-left: 3%;height: 300rpx;border-radius: 10rpx;" auto-focus placeholder="输入要搜索的文本" name='translate_input'></textarea>
+
+  <button class="translate_button" bindtap="submit">翻译</button>
+  
+  <!-- <text>{{inputText}}</text> -->
+  <view class="translate_test_out">
+    <text>{{translationtext}}</text>
+  </view>
+</view>
+
+
+

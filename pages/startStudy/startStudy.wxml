@@ -1,0 +1,62 @@
+<!--pages/startStudy/startStudy.wxml-->
+<view style="width: 100%;height: 15vh;position: fixed;background-color: white;border-bottom: rgba(0, 0, 0, 0.226) 1rpx solid;">
+  <view style="padding-top: 20rpx;display: flex; justify-content: center;">
+    <text style="font-size: 2em;">{{words[value].headWord}}</text>
+  </view>
+  <view style="display: flex;justify-content: center;padding-top: 5rpx;">
+    <view class="audio_view">
+      <view bindtap="audioUK_Play" id="UK_Audio">英</view>
+      <text style="padding-left: 10rpx;">{{words[value].content.word.content.ukphone}}</text>
+      <view style="margin-left: 10rpx;" bindtap="audioUSA_Play" id="USA_Audio">美</view>
+      <text style="padding-left: 10rpx;">{{words[value].content.word.content.usphone}}</text>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{!showShiyi}}" style="width: 100%;height: 85vh;display: flex;align-items: center;justify-content: center;" bindtap="chakanshiyi">
+  <view style="color: rgb(88, 88, 88);">
+    想一想后，点击点击查看释义
+  </view>
+</view>
+
+<view wx:else="{{showShiyi}}" style="padding-top: 15vh;padding-right: 15rpx;padding-left: 15rpx;padding-bottom: 200rpx;">
+  <view style="background-color: #97bdde70;padding: 5rpx;border-radius: 10rpx;">
+    释义
+  </view>
+  <view wx:for="{{words[value].content.word.content.trans}}" data-index="{{index}}" wx:for-item="item" style="font-size: 1.3em;">
+    <text>{{item.pos}}</text>
+    <text style="padding-left: 20rpx;">{{item.tranCn}}</text>
+  </view>
+
+  <view class="word_title_view">
+    {{words[value].content.word.content.sentence.desc}}
+  </view>
+  <view wx:for="{{words[value].content.word.content.sentence.sentences}}" data-index="{{index}}" wx:for-item="item">
+    <text style="display: block;padding-top: 15rpx;">{{item.sCn}}</text>
+    <text>{{item.sContent}}</text>
+  </view>
+
+  <view class="word_title_view">
+    {{words[value].content.word.content.phrase.desc}}
+  </view>
+  <view wx:for="{{words[value].content.word.content.phrase.phrases}}" data-index="{{index}}" wx:for-item="item">
+    <text style="display: block;padding-top: 15rpx;">{{item.pCn}}</text>
+    <text>{{item.pContent}}</text>
+  </view>
+  <view wx:for="{{words[value].content.word.content.phrase.phrases}}" data-index="{{index}}" wx:for-item="item">
+    <text style="display: block;padding-top: 15rpx;">{{item.pCn}}</text>
+    <text>{{item.pContent}}</text>
+  </view>
+  <view wx:for="{{words[value].content.word.content.phrase.phrases}}" data-index="{{index}}" wx:for-item="item">
+    <text style="display: block;padding-top: 15rpx;">{{item.pCn}}</text>
+    <text>{{item.pContent}}</text>
+  </view>
+
+
+</view>
+
+<view class="button_view">
+    <button style="background-color: green;" bindtap="nextWord">认识</button>
+    <button style="background-color: rgb(255, 145, 0);" bindtap="nextWord">模糊</button>
+    <button style="background-color: rgb(243, 79, 50);" bindtap="nextWord">忘记</button>
+</view>

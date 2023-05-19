@@ -1,0 +1,41 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.cion_image{
+    margin-top: 70px;
+    width: 5em;
+    height: 5rem;
+}
+
+page{
+    height: 100%;
+}
+.beging_view{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #97bdde;
+    box-sizing: border-box; 
+    left: 0rpx; 
+    top: 0rpx
+
+}

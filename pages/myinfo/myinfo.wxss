@@ -1,0 +1,67 @@
+/* pages/myinfo/myinfo.wxss */
+page {
+  background-color: rgb(235, 235, 235);
+}
+
+
+.title_view {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  width: 100%;
+  background-color: #97bdde;
+}
+
+.title_text {
+  margin-bottom: 4px;
+  color: rgb(22, 22, 22);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.nameimage_view {
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  /* background-color: blue; */
+}
+
+.name_view {
+  padding-left: 30rpx;
+  width: auto;
+  font-size: 1em;
+  /* height: 120rpx; */
+  /* border: brown 1rpx solid; */
+  display: block;
+  justify-content: top;
+}
+
+.level_view {
+  font-size: 0.9em;
+margin-top: 15rpx;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  color: rgb(252, 252, 252);
+  background-color: #97bdde;
+}
+
+/* 学习记录 */
+.study_record_view{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15rpx;
+  padding: 25rpx;
+  background-color: #ffffff;
+}
+.record_card{
+  text-align: center;
+  display: block;
+}
+.record_card_title{
+  font-size: 1.2em;
+  color: #4eacff;
+}
+.calendar {
+  --calendar-height: 618px;
+}

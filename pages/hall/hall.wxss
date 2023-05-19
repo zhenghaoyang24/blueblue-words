@@ -1,0 +1,126 @@
+/* pages/hall/hall.wxss */
+page {
+  background-color: rgb(235, 235, 235);
+}
+
+
+.title_view {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  width: 100%;
+  background-color: #97bdde;
+}
+
+.title_text {
+  margin-bottom: 4px;
+  color: rgb(22, 22, 22);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.hall_top_view {
+  /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.089);
+  border-radius: 10px;
+  background-color: rgba(248, 248, 248, 0.9);
+  width: 100%;
+}
+
+.button_top_1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.button_btn {
+  border-radius: 10rpx;
+  text-align: center;
+  /* border: 1rpx solid rebeccapurple; */
+  width: 30%;
+  padding: 10rpx;
+}
+
+.button_btn:active {
+  background-color: #272727;
+  background-color: #97bdde59;
+}
+
+.button_btn image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 60rpx;
+}
+
+.button_btn text {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.time_view {
+  padding: 20rpx;
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: center;
+}
+
+.time_view image {
+  width: 80rpx;
+}
+
+.time_view text {
+  font-size: 2em;
+  text-shadow: 1px 1px 10px black;
+  padding-left: 10rpx;
+  color: white;
+  font-size: 1.9em;
+}
+
+.tianqi_view {
+  padding-left: 20rpx;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+.my_picker{
+  display: flex;
+  justify-content: start;
+  text-align: center;
+font-size: 1.9em;
+}
+.my_picker text{
+  padding-right: 20rpx;
+}
+.my_picker image{
+  margin: 0;
+  width: 40rpx;
+}
+
+
+
+
+.image_title {
+  /* display: flex; */
+  /* justify-content: center; */
+  background: linear-gradient(rgba(45, 28, 16, 0.58), rgba(115, 97, 66, 0.19)), url('https://v.api.aa1.cn/api/bz-v3/?msg=%E9%A3%8E%E6%99%AF'), no-repeat;
+  background-size: 100% 100%;
+  height: 450rpx;
+  width: 100%;
+  overflow: hidden;
+}
+
+.city_info_view text{
+display: block;
+}
+.weather_view{
+  font-size: 1.1em;
+}
+.weather_view image{
+  width: 60rpx;
+}
+
+

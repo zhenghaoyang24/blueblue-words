@@ -1,0 +1,55 @@
+<!--pages/myinfo/myinfo.wxml-->
+<view class="title_view" style="height: {{navBarHeight}}px;">
+  <text class="title_text">信息</text>
+</view>
+
+
+
+
+
+<view class="userinfo nameimage_view">
+
+  <!-- <button bindtap="login">登录</button>
+
+  <image style="width: 200rpx;" src="{{userInfo.avatarUrl}}" mode="widthFix" />
+    <view>
+    {{userInfo.nickName}}
+    </view> -->
+  <block wx:if="{{canIUseOpenData}}">
+    <view style=" width: 150rpx;" class="userinfo-avatar" bindtap="bindViewTap">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="name_view">
+      <open-data type="userNickName" style="color: rgb(0, 0, 0);"></open-data>
+      <view class="level_view">
+        LVL:12
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <image style="width: 150rpx;" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text style="display: block;color: aqua;" class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+
+</view>
+
+<!-- 信息 -->
+<view style="padding-left:20rpx;padding-right: 20rpx;">
+  <view class="study_record_view">
+    <view class="record_card">
+      <text class="record_card_title">打卡</text>
+      <text>
+        0天
+      </text>
+    </view>
+    <view class="record_card">
+      <text class="record_card_title">共记</text>
+      <text>
+        0个
+      </text>
+    </view>
+  </view>
+
+  <van-calendar title="打卡日历" poppable="{{ false }}" show-confirm="{{ false }}" class="calendar" color="#97bdde" />
+  
+</view>

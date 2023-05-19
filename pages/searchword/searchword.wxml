@@ -1,0 +1,41 @@
+<view class="title_view" style="height: {{navBarHeight}}px;">
+  <text class="title_text">搜索单词</text>
+</view>
+
+<!-- 内容 -->
+<view class="search_contain">
+
+  <form bindsubmit='goSearchform'>
+    <view class="search_input_view">
+      <input class="search_word_input" auto-focus placeholder="输入要搜索的单词" name='inputWord' />
+      <!-- <view class="search_word_button" bindtap="getSearchWord">
+            查询</view> -->
+      <button class="search_word_button" style="width: 50px;padding: 0px;" form-type="submit">
+        <!-- <text>adw</text> -->
+        <image class="cion_image" src="../../images/icon/searchicon.png" mode="heightFix"></image>
+      </button>
+    </view>
+  </form>
+
+</view>
+<!-- 图片 -->
+<view wx:if="{{searchWord.word}}" style="display: flex;justify-content: center;">
+  <image style="height: 400rpx; bottom: 0%;" src="https://v.api.aa1.cn/api/api-jupai/index.php?msg={{searchWord.word}}" mode="heightFix"/>
+</view>
+
+<text style="display: block;font-size: 3em;padding: 20rpx;;">{{searchWord.word}} </text>
+<text style="display: block;">{{searchWord.speak}} </text>
+
+<view wx:if="{{searchWord.word}}" class="audio_view">
+  <button bindtap="audioUK_Play" id="UK_Audio">英</button>
+  <button style="margin-left: 10rpx;" bindtap="audioUSA_Play" id="USA_Audio">美</button>
+</view>
+
+<!-- 
+    <audio id="USA_Audio"  name="美" controls="false" src="http://dict.youdao.com/dictvoice?audio={{searchWord.word}}&type=0"></audio>
+    <audio id="UK_Audio" name="英" controls src="http://dict.youdao.com/dictvoice?audio={{searchWord.word}}&type=1"></audio> -->
+<text wx:if="{{!searchWord.word}}" style="margin: auto 0;color: rgba(0, 0, 0, 0.459);">没有搜到这个单词哦</text>
+<text wx:else="{{searchWord.word}}" style="display: block;padding-left: 20rpx;padding-top: 10rpx; font-size: 1.4em;">{{searchWord.exp}} </text>
+
+
+

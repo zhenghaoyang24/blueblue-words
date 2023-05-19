@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+
+  },
+
+  "navigationStyle": "default",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#97bdde",
+  "navigationBarTitleText": "今日热搜",
+  "navigationBarTextStyle": "black"
+
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index"
+
+  },
+  "navigationStyle": "default",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#97bdde",
+  "navigationBarTitleText": "设置计划",
+  "navigationBarTextStyle": "black"
+}

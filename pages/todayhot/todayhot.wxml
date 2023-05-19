@@ -1,0 +1,95 @@
+<!--pages/todayhot/todayhot.wxml-->
+
+<van-tabs active="{{ active }}" color="#97bdde" title-active-color="#006cca" title-inactive-color="#272727" animated="true" swipeable="true" sticky>
+
+  <!-- bilibili -->
+  <van-tab title="哔哩哔哩" style="padding-top: 5rpx;">
+    <view wx:for="{{bilibili}}" data-index="{{index}}" class="bilibili_view" bindtap="toBilibili">
+      <view class="number_bilibili">
+        {{index+1}}
+      </view>
+      <image src="{{bilibili[index].pic}}" mode="widthFix" />
+      <!-- 右边信息 -->
+      <view class="video_info_view">
+        <text class="title_text">{{bilibili[index].title}}</text>
+        <view class="author_image_view">
+          <view class="author_bofang_view">
+            <image src="../../images/icon/视频播放量.png" mode="widthFix" />
+            <text>{{bilibili[index].hot}}</text>
+          </view>
+          <view class="author_bofang_view">
+            <image src="../../images/icon/UP主.png" mode="widthFix" />
+            <text>{{bilibili[index].owner.name}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+
+    <!-- 微博 -->
+    <van-tab title="微博热搜" style="padding-top: 5rpx;">
+    <view wx:for="{{weibo}}" data-index="{{index}}" class="weibo_view" bindtap="toWeibo">
+      <view style="width: 30px;color: rgb(255, 60, 0);">{{index+1}}</view>
+      <view>{{weibo[index].title}}</view>
+      <view style="color: rgba(255, 0, 0, 0.747);right: 0;padding-left: 10rpx;font-size: 0.9em;">
+        {{weibo[index].hot}}
+      </view>
+    </view>
+  </van-tab>
+
+  <van-tab title="腾讯新闻">
+    <view wx:for="{{tencent}}" data-index="{{index}}" class="bilibili_view" bindtap="toTencent">
+      <view class="number_bilibili">
+        {{index+1}}
+      </view>
+      <image wx:if="{{tencent[index].pic}}" src="{{tencent[index].pic}}" mode="widthFix" />
+      <image wx:else="" src="../../images/background/图片.png" mode="widthFix" />
+      <!-- 右边信息 -->
+      <view class="video_info_view">
+        <text class="title_text">{{tencent[index].title}}</text>
+        <view class="author_image_view">
+          <view class="author_bofang_view">
+            <image src="../../images/icon/视频播放量.png" mode="widthFix" />
+            <text>{{tencent[index].hot}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+
+
+  <van-tab title="知 乎">
+    <view wx:for="{{zhihu}}" data-index="{{index}}" class="zhihu_view" bindtap="toZhihu">
+      <view class="number_zhihu">
+        {{index+1}}、
+      </view>
+      <text style="font-weight: 900;border-bottom: 1px red solid;padding-bottom: 10rpx;">{{zhihu[index].title}}</text>
+    </view>
+  </van-tab>
+
+
+
+
+  <van-tab title="今日头条">
+    <view wx:for="{{toutiao}}" data-index="{{index}}" class="bilibili_view" bindtap="toToutiao">
+      <view class="number_bilibili">
+        {{index+1}}
+      </view>
+      <image wx:if="{{toutiao[index].pic}}" src="{{toutiao[index].pic}}" mode="widthFix" />
+      <image wx:else="" src="../../images/background/图片.png" mode="widthFix" />
+      <!-- 右边信息 -->
+      <view class="video_info_view">
+        <text class="title_text">{{toutiao[index].title}}</text>
+        <view class="author_image_view">
+          <view class="author_bofang_view">
+            <image src="../../images/icon/视频播放量.png" mode="widthFix" />
+            <text>{{toutiao[index].hot}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </van-tab>
+
+
+</van-tabs>

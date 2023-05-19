@@ -1,0 +1,52 @@
+/* pages/startStudy/startStudy.wxss */
+/* .voice {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 8rpx;
+  background-color: aqua;
+  padding: 8rpx;
+  font-size: 0.8em;
+} */
+
+/* 读音按钮 */
+.audio_view {
+  display: flex;
+  padding: 0;
+  /* justify-content: start; */
+}
+
+.audio_view view {
+  padding: 10rpx;
+  border-radius: 8rpx;
+  font-size: 0.6em;
+  background-color: #97bdde;
+}
+
+.audio_view view:active {
+  background-color: #5ca2df;
+}
+
+
+.word_title_view {
+  margin-top: 20rpx;
+  background-color: #97bdde70;
+  padding: 5rpx;
+  border-radius: 10rpx;
+}
+
+.button_view {
+  border-top: rgba(0, 0, 0, 0.13) 1rpx solid;
+  padding-bottom: 50rpx;
+  padding-top: 40rpx;
+  background-color: #f8f8f8;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button_view button{
+  width: 150rpx;
+  color: white;
+}

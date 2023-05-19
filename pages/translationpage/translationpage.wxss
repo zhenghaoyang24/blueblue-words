@@ -1,0 +1,59 @@
+/* pages/translationpage/translationpage.wxss */
+page {
+  background-color: rgb(235, 235, 235);
+}
+
+.title_view {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  width: 100%;
+  background-color: #97bdde;
+}
+
+.title_text {
+  margin-bottom: 4px;
+  color: rgb(22, 22, 22);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+
+
+.translate_button {
+  margin-top: 20rpx;
+  /* margin-left: 5%; */
+  width: 95%;
+
+  background-color: #97bdde;
+}
+
+.translate_test_out {
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 10px;
+  width: 96%;
+  margin-left: 2%;
+  height: auto;
+}
+
+.toLanguageView{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 20rpx;
+  font-weight: 900;
+}
+.toLanguageView image{
+  margin-left: 4rpx;
+  width: 50rpx;
+  margin: 0;
+  padding: 0;
+}
+.my_picker{
+  font-size: 1.6rem;
+}

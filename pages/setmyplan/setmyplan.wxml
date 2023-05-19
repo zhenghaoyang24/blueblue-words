@@ -1,0 +1,52 @@
+<!--pages/setplan/setplan.wxml-->
+<view style="padding: 20rpx;">
+
+  <view style="display: flex;">
+    <image style="width: 30%;" src="{{book.image}}" mode="widthFix" />
+    <view style="width: 70%;padding-left: 30rpx;">
+      <text style="font-size: 1.2em;font-weight: 900;">{{book.name}}</text>
+      <view class="book_tab">
+        {{book.desc}}
+      </view>
+      <text style="font-size: 0.8em;">单词数{{book.wordsNumber}}</text>
+    </view>
+  </view>
+
+
+  <van-cell style="color: black;" title="选择新的单词书" is-link bind:click="showPopup" />
+  <van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 50%" bind:close="onClose">
+    <view style="padding: 20rpx;padding-top: 40rpx;">
+      <view wx:for="{{books}}" data-index="{{index}}" wx:for-item="item" style="padding-bottom: 20rpx;display: flex;" bindtap="setBook">
+        <image style="width: 30%;" src=" {{books[index].image}}" mode="widthFix" />
+        <view style="width: 70%;padding-left: 20rpx;display: block;">
+          <view>
+            <text>{{books[index].name}}</text>
+          </view>
+          <view>
+            <text>共{{books[index].wordsNumber}}个</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </van-popup>
+
+  <view style="display: flex;padding: 10rpx;justify-content: space-between;">
+    <text>每日单词</text>
+    <van-stepper value="{{everydayWord}}" min="10" max="1000" bind:change="setDanci" />
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

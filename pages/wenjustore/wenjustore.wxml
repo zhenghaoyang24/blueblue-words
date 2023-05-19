@@ -1,0 +1,31 @@
+<!--pages/wenjustore/wenjustore.wxml-->
+
+<van-tabs active="{{ active }}" color="#97bdde" title-active-color="#006cca" title-inactive-color="#272727" animated="true" swipeable="true" sticky>
+  <van-tab title="备考必备">
+
+    <view wx:for="{{goods.beikao}}" data-index="{{index}}" wx:for-item="item">
+      <van-card style="height: 200px;" num="{{item.num}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.thumb}}" />
+    </view>
+
+
+  </van-tab>
+  
+  <van-tab title="文具伴侣">
+    <view wx:for="{{goods.wenju}}" data-index="{{index}}" wx:for-item="item">
+      <van-card style="height: 200px;" num="{{item.num}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.thumb}}" />
+    </view>
+  </van-tab>
+
+  <van-tab title="心意礼物">
+    <view wx:for="{{goods.liwu}}" data-index="{{index}}" wx:for-item="item">
+      <van-card style="height: 200px;" num="{{item.num}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.thumb}}" />
+    </view>
+  </van-tab>
+
+  <van-tab title="回购好物">
+    <view wx:for="{{goods.haowu}}" data-index="{{index}}" wx:for-item="item">
+      <van-card style="height: 200px;" num="{{item.num}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.thumb}}" />
+    </view>
+  </van-tab>
+
+</van-tabs>

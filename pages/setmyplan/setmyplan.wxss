@@ -1,0 +1,13 @@
+/* pages/setmyplan/setmyplan.wxss */
+/* 计划设置 */
+.book_tab {
+  margin-top: 10rpx;
+  width: fit-content;
+  font-weight: 300;
+  background-color: #66a5dd;
+  border-radius: 3px;
+  padding: 0PX;
+  color: white;
+  font-size: 0.7em;
+  padding: 3px;
+}

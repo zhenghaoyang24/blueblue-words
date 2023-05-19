@@ -1,0 +1,157 @@
+/* pages/Remenber.wxss */
+page {
+  background-color: rgb(235, 235, 235);
+}
+
+.title_view {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  width: 100%;
+  background-color: #97bdde;
+}
+
+.title_text {
+  margin-bottom: 4px;
+  color: rgb(22, 22, 22);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.remenber_contain {
+  width: 100%;
+  border: 0;
+
+}
+
+/* 背景图片 */
+.bg-image {
+  width: 100%;
+  position: fixed;
+  z-index: -999;
+}
+
+/* 用户显示信息 未用 */
+.userheadimview {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* 用户头像 未用 */
+.userinfo-avatar {
+  overflow: hidden;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+/* 用户名字 未用 */
+.userinfo-name {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+
+/* 顶部view */
+.top_view {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.top_title_text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+}
+
+
+/* 记单词容器 */
+.rem-container {
+  padding: 15px;
+  /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(248, 248, 248, 0.9);
+
+}
+
+/* 标题 学习进度 */
+.plan_title_view {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: solid #97bdde 0.1rem;
+}
+
+/* 计划设置 */
+.setplan_view {
+  font-weight: 300;
+  background-color: #66a5dd;
+  border-radius: 3px;
+  padding: 0PX;
+  color: white;
+  font-size: 0.7em;
+  padding: 3px;
+}
+
+/* 单词数据大框 */
+.remenber_word_view {
+  background-color: #97bdde;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+.today_data_view {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.data_view {
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 开始学习 */
+.begin_study_view {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.begin_study_view_button {
+
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 10px;
+
+
+}
+.daily_text_view{
+  color: rgb(0, 0, 0);
+  padding: 23rpx;
+  font-size: 1.1rem;
+}

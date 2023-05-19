@@ -1,0 +1,66 @@
+/* pages/dayword/dayword.wxss */
+page {
+  background-color: rgb(235, 235, 235);
+}
+
+.every_view {
+  padding: 20rpx;
+}
+
+.date_view{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.date_view text{
+  text-shadow: 1rpx 1rpx 5rpx rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  font-size: 1.9em;
+}
+
+.sentence_card_view1 {
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 20rpx;
+  background: linear-gradient(#2d1c1094, rgba(115, 97, 66, 0.19)), url('https://v.api.aa1.cn/api/bz-v3/?msg=%E9%A3%8E%E6%99%AF'), no-repeat;
+  background-size: 100% 100%;
+  /* width: 100%; */
+  padding: 20rpx;
+  height: 450rpx;
+}
+
+.sentence_card_view2 {
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 20rpx;
+  background: linear-gradient(#2d1c1094, rgba(115, 97, 66, 0.19)), url('https://v.api.aa1.cn/api/bz-v3/?msg=%E6%B1%BD%E8%BD%A6'), no-repeat;
+  background-size: 100% 100%;
+  /* width: 100%; */
+  padding: 20rpx;
+  height: 450rpx;
+}
+
+.sentence_card_view3 {
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 20rpx;
+  background: linear-gradient(#2d1c1094, rgba(115, 97, 66, 0.19)), url('https://v.api.aa1.cn/api/bz-v3/?msg=%E7%BE%8E%E5%A5%B3'), no-repeat;
+  background-size: 100% 100%;
+  /* width: 100%; */
+  padding: 20rpx;
+  height: 450rpx;
+}
+
+
+.image_title {
+  /* border: 1px red solid; */
+  display: flex;
+  height: 60%;
+  align-self: center;
+}
+
+.image_title text {
+  align-self: center;
+  text-shadow: 1rpx 1rpx 5rpx rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-weight: 900;
+  color: white;
+}

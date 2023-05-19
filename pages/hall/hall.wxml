@@ -1,0 +1,119 @@
+<!--pages/hall/hall.wxml-->
+<view class="title_view" style="height: {{navBarHeight}}px;">
+  <text class="title_text">{{appname}}</text>
+</view>
+<view style="padding-top:  {{navBarHeight}}px;margin: 0;">
+</view>
+
+<view style="padding: 0;margin: 0;">
+
+  <view class="image_title">
+    <view bindtap="getTime" class="time_view">
+      <image src="../../images/icon/时间.png" mode="widthFix" />
+      <text>{{Time}}</text>
+    </view>
+
+    <!-- 天气 -->
+    <view class="tianqi_view">
+      <picker value="{{index}}" range="{{citys}}" range-key="city" bindchange="bindPickerChange" class="my_picker">
+        <text>{{citys[index].city}}</text>
+        <image src="../../images/icon/切换.png" mode="widthFix" />
+      </picker>
+
+      <view class="weather_view">
+        <image wx:if="{{tianqi.wether=='多云'}}" src="../../images/icon/多云.png" mode="widthFix" />
+        <image wx:if="{{tianqi.wether=='雨'}}" src="../../images/icon/暴雨.png" mode="widthFix" />
+        <image wx:if="{{tianqi.wether=='雾'}}" src="../../images/icon/雾.png" mode="widthFix" />
+        <image wx:if="{{tianqi.wether=='晴'}}" src="../../images/icon/晴天.png" mode="widthFix" />
+        <text style="padding-left: 10rpx;">{{tianqi.wether}}</text>
+      </view>
+
+      <view style="display: flex;justify-content: start;font-size: 1em;">
+        <view class="city_info_view">
+          <text>温度：{{tianqi.temp}}℃</text>
+          <text>湿度：{{tianqi.humidity}}</text>
+          <text>气压：{{tianqi.stp}}hPa</text>
+        </view>
+        <view class="city_info_view" style="padding-left: 35rpx;">
+          <text>风速：{{tianqi.wdspd}}</text>
+          <text>风力：{{tianqi.wdforce}}</text>
+          <text>风向：{{tianqi.wd}}</text>
+        </view>
+        <view class="city_info_view" style="padding-left: 35rpx;">
+          <text>pm2.5：{{tianqi.pm25}}</text>
+          <text>AQI：{{tianqi.aqi}}</text>
+          <text>24小时降雨：{{tianqi.prcp24h}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view style="padding: 20rpx;">
+    <view class="hall_top_view">
+
+      <view class="button_top_1">
+
+        <navigator url="../dayword/dayword" class="button_btn">
+          <image src="../../images/icon/句子.png" mode="widthFix" />
+          <text style="display: block;">每日一句</text>
+        </navigator>
+
+        <navigator url="../todayhot/todayhot" class="button_btn">
+          <!-- <view class="button_btn" bindtap="today_hot"> -->
+          <image src="../../images/icon/热点.png" mode="widthFix" />
+          <text style="display: block;">今日热点</text>
+          <!-- </view> -->
+        </navigator>
+
+        <navigator url="../wenjustore/wenjustore" class="button_btn">
+          <image src="../../images/icon/购物.png" mode="widthFix" />
+          <text>好物商城</text>
+        </navigator>
+
+      </view>
+
+      <!-- <view class="button_top_1" style="padding-top: 10rpx;">
+        <navigator url="../todayhot/todayhot" class="button_btn">
+          <image src="../../images/icon/热点.png" mode="widthFix" />
+          <text style="display: block;">今日热点</text>
+        </navigator>
+        <view class="button_btn">
+          <image src="../../images/icon/网络课堂.png" mode="widthFix" />
+          <text>名师讲堂</text>
+        </view>
+        <view class="button_btn">
+          <image src="../../images/icon/记单词.png" mode="widthFix" />
+          <text>每日一词</text>
+        </view>
+      </view> -->
+
+    </view>
+  </view>
+
+
+  <!-- <view style="display: flex;justify-content: center;">
+    <image style="width: 80%;" src="../../images/background/笑脸.png" mode="widthFix" />
+  </view> -->
+
+</view>
+
+
+<view style="padding: 20rpx;border-top: 1px rgba(0, 0, 0, 0.356) solid;">
+  <view style="display: flex;align-items: center;">
+    <image style="width: 50rpx;margin: 0;padding: 0;" src="../../images/icon/音乐.png" mode="widthFix" />
+    <text style="padding-left: 10rpx;font-size: 1.3em;margin: 0;font-weight: 600;"> 英文歌曲榜单</text>
+  </view>
+  <view style="display: flex;align-items: center;">
+    <image style="width: 110rpx;" src="../../images/icon/NO.1.png" mode="widthFix" />
+    <audio poster="https://y.qq.com/music/photo_new/T002R300x300M000002SNWPy1l3aax_1.jpg" name="Intentions" author="Justin Bieber" src="http://aqqmusic.tc.qq.com/amobile.music.tc.qq.com/M500000mkri13CZ3Mw.mp3?guid=B69D8BC956E47C2B65440380380B7E9A&vkey=FFE308E07B9DE2527B89A5205D84F83DB120D77ACE9ADB79873F97BFC868F9ADEBEF716A9F3277C8AEAF498F01CAE8C8CE86DC2F28A1701F&uin=1828222534&fromtag=119045" id="myAudio" controls loop></audio>
+  </view>
+  <view style="display: flex;align-items: center;">
+    <image style="width: 110rpx;" src="../../images/icon/NO.2.png" mode="widthFix" />
+    <audio poster="https://p4.music.126.net/wjJpyZORT6ZKIhd5ZAvF-w==/109951168231895517.jpg" name="I WishMy Mind..." author="Ivoris" src="https://m801.music.126.net/20230519105710/c5452e3385caad0ec91ffb2f24c5433e/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/22259965725/dd5f/e5a0/bb20/2f1cf67215cace92d444727a93b57b19.mp3" id="myAudio" controls loop></audio>
+  </view>
+  <view style="display: flex;align-items: center;">
+    <image style="width: 110rpx;" src="../../images/icon/NO.3.png" mode="widthFix" />
+    <audio poster="https://p3.music.126.net/d9d0ys74aC9tCfHtp6jcuA==/109951163975730949.jpg" name="Slow Down" author="Madnap" src="https://m701.music.126.net/20230519105210/846d72317bd5c22c5627c976fe969167/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/19849508833/ce6a/aae9/8adf/976c0702ad2e6feaa74c1cd964cf35a7.mp3" id="myAudio" controls loop></audio>
+  </view>
+
+</view>

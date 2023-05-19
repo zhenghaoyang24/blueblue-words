@@ -1,0 +1,72 @@
+{
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-calendar": "@vant/weapp/calendar/index"
+  },
+
+  "pages": [
+    "pages/index/index",
+    "pages/myinfo/myinfo",
+    "pages/hall/hall",
+    "pages/remenber/remenber",
+    "pages/searchword/searchword",
+    "pages/translationpage/translationpage",
+    "pages/logs/logs",
+    "pages/todayhot/todayhot",
+    "pages/webview/webview",
+    "pages/dayword/dayword",
+    "pages/wenjustore/wenjustore",
+    "pages/setmyplan/setmyplan",
+    "pages/startStudy/startStudy"
+  ],
+  "tabBar": {
+    "custom": false,
+    "color": "#8a8a8a",
+    "selectedColor": "#2693ff",
+    "backgroundColor": "#f9f9f9",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "images/tobBarImages/studyselected.png",
+        "iconPath": "images/tobBarImages/study.png",
+        "pagePath": "pages/remenber/remenber",
+        "text": "学习"
+      },
+      {
+        "selectedIconPath": "images/tobBarImages/searchselected.png",
+        "iconPath": "images/tobBarImages/search.png",
+        "pagePath": "pages/searchword/searchword",
+        "text": "搜索"
+      },
+      {
+        "selectedIconPath": "images/tobBarImages/tanslationiconselected.png",
+        "iconPath": "images/tobBarImages/tanslationicon.png",
+        "pagePath": "pages/translationpage/translationpage",
+        "text": "翻译"
+      },
+      {
+        "selectedIconPath": "images/tobBarImages/tanslationiconselected.png",
+        "iconPath": "images/tobBarImages/tanslationicon.png",
+        "pagePath": "pages/hall/hall",
+        "text": "大厅"
+      },
+      {
+        "selectedIconPath": "images/tobBarImages/myselected.png",
+        "iconPath": "images/tobBarImages/my.png",
+        "pagePath": "pages/myinfo/myinfo",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,42 @@
+<!--pages/dayword/dayword.wxml-->
+<view class="every_view">
+
+  <view class="sentence_card_view1">
+    <view class="date_view">
+      <text>{{month}}</text>月
+      <text>{{day}}</text>日
+    </view>
+    <view class="image_title">
+      <text> {{msg1.content}}</text>
+    </view>
+    <text style="color: white;"> {{msg1.note}}</text>
+  </view>
+
+  <view class="sentence_card_view2" style="margin-top: 40rpx;">
+    <view class="date_view">
+      <text>{{month}}</text>月
+      <text>{{day-1}}</text>日
+    </view>
+    <view class="image_title">
+      <text> {{msg2.content}}</text>
+    </view>
+    <text style="color: white;"> {{msg2.note}}</text>
+  </view>
+
+  <view class="sentence_card_view3" style="margin-top:40rpx;">
+    <view class="date_view">
+      <text>{{month}}</text>月
+      <text>{{day-2}}</text>日
+    </view>
+    <view class="image_title">
+      <text> {{msg3.content}}</text>
+    </view>
+    <text style="color: white;"> {{msg3.note}}</text>
+  </view>
+
+  <view style="height: 100rpx;">
+    
+  </view>
+
+
+</view>

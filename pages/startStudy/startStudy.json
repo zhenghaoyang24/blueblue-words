@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationStyle": "default",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#97bdde",
+  "navigationBarTitleText": "学习单词",
+  "navigationBarTextStyle": "black"
+}
