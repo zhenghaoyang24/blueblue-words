@@ -11,13 +11,13 @@
 在翻译句子功能中由于用到百度翻译API，请自行注册账号替换相关代码。appid以及sign相关要求请参照百度翻译API进行填写。在每日一句中使用了聚合数据相应API，需要用到自己注册账号的Key。
 
 ### 一、替换代码位置：pages/translationpage/translationpage.js  
-#### 1. 第83行：appid需要更换为自己的appid
+#### 1. 第83行：appid需要更换为自己的appid （[百度翻译开放平台 (baidu.com)](https://fanyi-api.baidu.com/product/113)）
 
 `url: "http://api.fanyi.baidu.com/api/trans/vip/translate?q="+this.data.inputText+"&from=auto&to="+this.data.to+"&appid=202303XXXXX&salt=14356602XX&sign="+this.data.sign,`
 
 #### 2. 第104行：此行代码是用于计算sign，用来填充上方url中的sign，具体拼写规则参照百度翻译API，很简单。
 `var befor_sign = '20230329XXXXXXXXX'+this.data.inputText+'14356602XXXXXXXXXXXXXXX'`
-### 二、替换代码位置：pages/dayword/dayword.js 
+### 二、替换代码位置：pages/dayword/dayword.js  ([每日英语-每日英语API接口-免费API接口-聚合数据 (juhe.cn)](https://www.juhe.cn/docs/api/id/760))
 #### 1. 第86行：key更换为自己注册的聚合数据账号的Key，API接口名字为每日英语。
 `url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315dXXXXXXXXXXXXXXXX','`
    
