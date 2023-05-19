@@ -18,53 +18,7 @@ Page({
     // translationtext: ""
   },
 
-  // getMsg() {
 
-  //   console.log("getMsg（）")
-  //   wx.request({
-  //     url: "https://zj.v.api.aa1.cn/api/wenan-mj/?type=json",
-  //     method: 'GET',
-  //     success: (req) => {
-  //       console.log("msgbefo:" + req.data.msg)
-  //       this.setData({
-  //         msgt: req.data.msg
-  //       });
-  //     }
-  //   })
-
-
-
-
-  //   console.log("msg2:" + this.data.msgt)
-  // },
-
-  // getSign(params) {
-  //   var befor_sign = '20230329001620142' + this.data.msgt + '1435660288tZ3tqS7R9dioa_m6rkNH'
-  //   var s = md5(befor_sign)
-  //   this.setData({
-  //     sign: s
-  //   })
-  //   console.log("sign是：" + this.data.sign)
-  // },
-
-
-  // fanyi() {
-
-  //   wx.request({
-  //     url: "http://api.fanyi.baidu.com/api/trans/vip/translate?q=" + this.data.msgt + "&from=auto&to=en&appid=20230329001620142&salt=1435660288&sign=" + this.data.sign,
-  //     method: 'GET',
-  //     success: (req) => {
-  //       // console.log("req:" + req),
-  //       this.setData({
-  //         translationtext: req.data.trans_result[0].dst,
-  //         // translationtext: req.data,
-  //       });
-  //     }
-  //   })
-  //   console.log("translationtext:" + this.data.translationtext)
-  //   console.log("翻译")
-  //   this.getSign();
-  // },
 
   getMon() {
     this.setData({
@@ -83,7 +37,7 @@ Page({
     if(app.globalData.daySentence1==''){
       console.log("为空")
       wx.request({
-        url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315d5d06c07537e160feb2c97312c',
+        url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315dXXXXXXXXXXXXXXXXXXXX',
         method: 'GET',
         success: (req) => {
           // console.log("req:" + req),
@@ -109,7 +63,7 @@ Page({
     if(app.globalData.daySentence2==''){
       console.log("为空")
       wx.request({
-        url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315d5d06c07537e160feb2c97312c',
+        url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315dXXXXXXXXXXXXXXXXXXXX',
         method: 'GET',
         success: (req) => {
           // console.log("req:" + req),
@@ -134,7 +88,7 @@ Page({
     if(app.globalData.daySentence3==''){
       console.log("为空")
       wx.request({
-        url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315d5d06c07537e160feb2c97312c',
+        url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315dXXXXXXXXXXXXXXXXXXXX',
         method: 'GET',
         success: (req) => {
           // console.log("req:" + req),
