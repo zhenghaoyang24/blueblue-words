@@ -4,7 +4,7 @@
 
 ## 项目说明
 
-此程序只拥有简单的记单词框架，没有用到数据库或云开发。
+此程序只拥有简单的记单词框架，没有用到数据库或云开发。欢迎更新补充
 
 ## **特别说明**
 
@@ -33,8 +33,11 @@
 4.每日一句、简易商城、天气查看、热歌播放。
 
 ## 项目截图
-
-
+![image](https://github.com/zhenghaoyang24/WeChatProjects-BlueWord/assets/95458562/001f78e5-a0a0-4e11-9b0c-a76f1b832886)
+![image](https://github.com/zhenghaoyang24/WeChatProjects-BlueWord/assets/95458562/a43bf936-5bf5-49f1-8282-6f76b88d24e0)
+![image](https://github.com/zhenghaoyang24/WeChatProjects-BlueWord/assets/95458562/dd67ac99-c09a-4104-a83f-f001f47ca250)
+![image](https://github.com/zhenghaoyang24/WeChatProjects-BlueWord/assets/95458562/bef2f949-010d-4965-8f1f-3bec39fd517a)
+![image](https://github.com/zhenghaoyang24/WeChatProjects-BlueWord/assets/95458562/91201e4b-b958-4218-b7a3-2ed60107cc87)
 
 
 ## 开发环境
