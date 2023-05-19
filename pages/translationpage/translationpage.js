@@ -81,7 +81,7 @@ Page({
     this.getSign()  //计算sign
   
     wx.request({
-          url:  "http://api.fanyi.baidu.com/api/trans/vip/translate?q="+this.data.inputText+"&from=auto&to="+this.data.to+"&appid=20230329001620142&salt=1435660288&sign="+this.data.sign,
+          url:  "http://api.fanyi.baidu.com/api/trans/vip/translate?q="+this.data.inputText+"&from=auto&to="+this.data.to+"&appid=2023XXXXXXXXX&salt=1435660288&sign="+this.data.sign,
           method:'GET',
           success:(req)=>{
             this.setData({
@@ -99,7 +99,7 @@ Page({
 
   //计算sign
   getSign(params) {
-    var befor_sign = '20230329001620142'+this.data.inputText+'1435660288tZ3tqS7R9dioa_m6rkNH'
+    var befor_sign = '20230329001620142'+this.data.inputText+'143566XXXXXXXXXXXX'
     var s = md5(befor_sign)
     this.setData({
       sign:s
