@@ -6,18 +6,32 @@
 
 此程序的 **记忆单词功能** 只包含少量的单词循环，未涉及到记忆算法、单词规划、数据库或云开发存储。
 
-## **特别说明**
+## 注意事项
 
 在翻译句子功能中由于用到百度翻译API，请自行注册账号替换相关代码。appid以及sign相关要求请参照百度翻译API进行填写。在每日一句中使用了聚合数据相应API，需要用到自己注册账号的Key。
 
-### 一、替换代码位置：pages/translationpage/translationpage.js  
-#### 1. 第83行：appid需要更换为自己的appid （[百度翻译开放平台 (baidu.com)](https://fanyi-api.baidu.com/product/113)）
+### 百度翻译替换位置：`pages/translationpage/translationpage.js`
+#### 1. 第83行左右：appid需要更换为自己的appid （[百度翻译开放平台 (baidu.com)](https://fanyi-api.baidu.com/product/113)）
 
-`url: "http://api.fanyi.baidu.com/api/trans/vip/translate?q="+this.data.inputText+"&from=auto&to="+this.data.to+"&appid=202303XXXXX&salt=14356602XX&sign="+this.data.sign,`
+```js
+// translationpage.js
+// 注意：保留 1435660288
+wx.request({
+   url:  "http://api.fanyi.baidu.com/api/trans/vip/translate?q="+this.data.inputText+"&from=auto&to="+this.data.to+
+   "&appid=你的AppID&salt=1435660288&sign="+this.data.sign,
+})
+```
 
-#### 2. 第102行：此行代码是用于计算sign，用来填充上方url中的sign，具体拼写规则参照百度翻译API，很简单。
-`var befor_sign = '20230329XXXXXXXXX'+this.data.inputText+'14356602XXXXXXXXXXXXXXX'`
-### 二、替换代码位置：pages/dayword/dayword.js  
+#### 2. 第102行左右：此行代码是用于计算sign，用来填充上方url中的sign，需填写自己的 `AppID` 与 `秘钥`， 具体拼写规则可参照下方:
+```js
+// translationpage.js
+// 注意：保留 1435660288
+getSign(params) {
+   var befor_sign = '你的AppID'+this.data.inputText+'1435660288你的秘钥'
+}
+```
+
+### 聚合数据替换位置：pages/dayword/dayword.js  
 #### 1. 第40\66\91行：key更换为自己注册的聚合数据账号的Key。([每日英语-每日英语API接口-免费API接口-聚合数据 (juhe.cn)](https://www.juhe.cn/docs/api/id/760))
 `url: 'http://apis.juhe.cn/fapigx/everyday/query?key=392315dXXXXXXXXXXXXXXXX','`
    
